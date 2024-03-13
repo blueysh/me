@@ -18,8 +18,15 @@ export default function Index() {
           </p>
 
           <div className="space-y-1">
-            <Button type="secondary">See my Work</Button>
-            <Button type="secondary">View Resume</Button>
+            <Button type="secondary" onClick={() => (location.href = "/work")}>
+              See my Work
+            </Button>
+            <Button
+              type="secondary"
+              onClick={() => (location.href = "/resume")}
+            >
+              View Resume
+            </Button>
           </div>
         </section>
 
